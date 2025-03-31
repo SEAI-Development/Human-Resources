@@ -1,0 +1,10 @@
+{
+  "schema": "./src/schema.ts",
+  "out": "./drizzle",
+  "dialect": "pg",
+  "dbCredentials": {
+    "connectionString": 
+"postgres://user:password@localhost:5432/database"
+  }
+}
+

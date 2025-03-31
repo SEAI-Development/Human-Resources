@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": ["src"],
+  "compilerOptions": {
+    "target": "ES6",                          // Compila in ES6
+    "module": "commonjs",                     // Usa il modulo CommonJS per la compatibilità
+    "outDir": "./dist",                       // Cartella di output per i file compilati
+    "rootDir": "./src",                       // Cartella dei file sorgenti
+    "lib": ["dom", "esnext"],                 // Librerie da includere
+    "moduleResolution": "node",               // Usa la risoluzione dei moduli di tipo Node.js
+    "esModuleInterop": true,                  // Permette l'interoperabilità tra moduli ES e CommonJS
+    "skipLibCheck": true,                     // Ignora la verifica delle librerie
+    "forceConsistentCasingInFileNames": true, // Forza la coerenza nei nomi dei file
+    "strict": true,                           // Modalità di controllo rigoroso per i tipi
+    "jsx": "react"                            // Compilazione JSX per React
+  },
+  "include": ["src/**/*"],                    // Include tutti i file nella cartella src
+  "exclude": ["node_modules"]                 // Esclude la cartella node_modules
+}
