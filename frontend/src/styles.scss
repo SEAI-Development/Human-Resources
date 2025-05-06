@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;           // Imposta un font semplice e leggibile
+  background: #f0f0f0;               // Colore di sfondo grigio chiaro per l'intera pagina
+  margin: 0;                         // Rimuove i margini predefiniti del browser
+  padding: 2rem;                     // Aggiunge spazio interno attorno al contenuto
+}
+
+.container {
+  max-width: 600px;                  // Limita la larghezza massima a 600px
+  margin: auto;                      // Centra orizzontalmente il contenitore
+  background: white;                // Sfondo bianco per contrastare con il grigio della pagina
+  padding: 2rem;                     // Spazio interno uniforme
+  border-radius: 8px;                // Angoli arrotondati
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Leggera ombra per un effetto "sollevato"
+}
+
+textarea {
+  width: 100%;                       // Occupa tutta la larghezza disponibile
+  height: 100px;                     // Altezza fissa iniziale
+  margin-bottom: 1rem;              // Spazio sotto al campo
+  padding: 1rem;                     // Spazio interno per il testo
+  font-size: 1rem;                   // Dimensione del testo leggibile
+  resize: vertical;                 // Permette di ridimensionare solo in verticale
+}
+
+button {
+  background: #007bff;              // Colore di sfondo blu acceso (stile Bootstrap)
+  color: white;                     // Testo bianco
+  border: none;                     // Rimuove il bordo predefinito
+  padding: 0.7rem 1.2rem;           // Spazio interno verticale e orizzontale
+  border-radius: 4px;               // Angoli leggermente arrotondati
+  cursor: pointer;                  // Mostra il cursore "mano" al passaggio
+  font-weight: bold;                // Testo in grassetto
+}
+
+button:hover {
+  background: #0056b3;              // Colore più scuro al passaggio del mouse (hover effect)
+}
+
+.loading {
+  margin-top: 1rem;                 // Spazio sopra all'elemento
+  font-style: italic;               // Testo in corsivo per dare enfasi
+}
+
+.output {
+  margin-top: 2rem;                 // Spazio sopra all'output
+  background: #f9f9f9;              // Sfondo grigio molto chiaro
+  padding: 1rem;                    // Spazio interno
+  border-radius: 4px;               // Angoli leggermente arrotondati
+}
+
+pre {
+  background: #eee;                 // Sfondo grigio per blocchi di testo (es. codice)
+  padding: 1rem;                    // Spazio interno per leggibilità
+  border-radius: 4px;               // Angoli arrotondati
+  white-space: pre-wrap;            // Va a capo automaticamente mantenendo gli spazi
+}

@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+  RESET BASE
+  Rimuove margini e padding di default per tutti gli elementi
+--------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+  STILI GLOBALI
+  Imposta font, sfondo e colore testo di default
+--------------------------------------------------------------*/
+body {
+  font-family: 'Inter', sans-serif;            /* Font moderno e leggibile */
+  background: linear-gradient(135deg, #f0f4ff, #d9e4ff); /* Sfumatura leggera */
+  color: #333;                                 /* Colore testo principale */
+  min-height: 100vh;                           /* Altezza minima viewport */
+}
+
+/*--------------------------------------------------------------
+  CONTAINER PRINCIPALE
+  Centro la card dell'app e aggiungo box-shadow e padding
+--------------------------------------------------------------*/
+.container {
+  max-width: 600px;                            /* Larghezza massima del contenitore */
+  margin: 3rem auto;                           /* Centra orizzontalmente */
+  background: #ffffff;                         /* Sfondo bianco della card */
+  border-radius: 12px;                         /* Angoli arrotondati */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);    /* Ombra morbida */
+  padding: 2rem;                               /* Spazio interno */
+  display: flex;
+  flex-direction: column;                      /* Disposizione verticale */
+  gap: 1.5rem;                                 /* Distanza tra figli */
+}
+
+/*--------------------------------------------------------------
+  TITOLO
+--------------------------------------------------------------*/
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a73e8;                              /* Blu primario */
+}
+
+/*--------------------------------------------------------------
+  TEXTAREA
+  Area di input per il prompt AI
+--------------------------------------------------------------*/
+textarea {
+  width: 100%;                                 /* Larghezza piena */
+  min-height: 140px;                           /* Altezza minima */
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;                      /* Bordo grigio chiaro */
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+/* Focus state per fornire feedback visivo */
+textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+/*--------------------------------------------------------------
+  BUTTON GENERA
+--------------------------------------------------------------*/
+button {
+  align-self: flex-end;                        /* Allinea il bottone a destra */
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+/* Hover state per dare feedback */
+button:hover:not(:disabled) {
+  background: #1669c1;
+  transform: translateY(-1px);
+}
+
+/* Active state */
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Stato disabilitato con opacità ridotta */
+button:disabled {
+  background: #a0c1f7;
+  cursor: not-allowed;
+}
+
+/*--------------------------------------------------------------
+  SEZIONE ERRORE
+--------------------------------------------------------------*/
+.error {
+  color: #d32f2f;                              /* Rosso per errori */
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+  RISULTATO GENERATO
+  Box che contiene il testo AI e il bottone copia
+--------------------------------------------------------------*/
+.result-section {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  position: relative;                          /* Per posizionare il bottone copia */
+}
+
+/* Testo con wrapping */
+.result-section pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Bottone Copia posizionato in alto a destra */
+.result-section button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
